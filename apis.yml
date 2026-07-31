@@ -1,8 +1,28 @@
 aid: onze
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/onze.png
 name: Onze
-description: 'Onze is a company surfaced as a portfolio company of ribbit-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Onze is a Brazilian fintech (São Paulo) focused on corporate private pension
+  (previdência privada) and financial health for companies and their employees.
+  It offers digital management of employer-sponsored pension plans, access to
+  more than 300 investment funds, one-on-one financial consultations with
+  specialists, and financial-education seminars, all delivered as a B2B employee
+  benefits platform. Onze positions itself as the first fintech centered on
+  pension and financial wellness for a company's collaborators, and is backed by
+  Ribbit Capital. This profile was added to the API Evangelist network as a
+  portfolio-lead stub; as of this enrichment pass Onze publishes no public
+  developer portal, API reference, or machine-readable API surface.
 url: https://raw.githubusercontent.com/api-evangelist/onze/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +32,37 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Pension
+- Retirement
+- Financial Health
+- Employee Benefits
+- Brazil
+- Investments
 apis: []
+common:
+- type: DomainSecurity
+  url: security/onze-domain-security.yml
+- type: Website
+  url: https://www.onze.com.br/
+- type: Blog
+  url: https://www.onze.com.br/blog/
+- type: Login
+  url: https://www.onze.com.br/painel/login/
+- type: PrivacyPolicy
+  url: https://www.onze.com.br/politica-de-privacidade
+- type: TermsOfService
+  url: https://www.onze.com.br/termos-de-uso-onze
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
